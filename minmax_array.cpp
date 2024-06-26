@@ -9,6 +9,7 @@ int findminmax(int arr[],int n){
         if(arr[0]>arr[1]){
             max=arr[0];
             min=arr[1];
+            //comment
             
         }
     else {
