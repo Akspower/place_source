@@ -21,21 +21,32 @@ Node(int data){
 
 
 
-void insertathead(Node * &head,int data){
+void insertathead(Node * &head,Node * &tail,int data){
+if(head==NULL){
+    Node* newnode= new Node(data);
+ head=newnode;
+ tail=newnode;
+ return;
+}
 
-    
     Node *newnode= new Node(data);
     newnode->next=head;
     head=newnode;
 }
 
-// void insertattail(Node * &tail,int data){
-//     Node* newnode = new Node(data);
-//     tail->next=newnode;
+void insertattail(Node * &head,Node * &tail,int data){
+    if(head==NULL){
+    Node* newnode= new Node(data);
+ head=newnode;
+ tail=newnode;
+ return;
+}
+    Node* newnode = new Node(data);
+    tail->next=newnode;
 
-//     tail=newnode;
+    tail=newnode;
 
-// }
+}
 void print(Node * &headhai){
     Node * temp=headhai; 
     while(temp!=NULL){
@@ -45,27 +56,25 @@ void print(Node * &headhai){
 }
 
 int main (){
-Node *head=new Node(10);       //also possible Node *head = NULL
-Node *tail=new Node(100);
+Node *head=NULL;     //also possible Node *head = NULL
+Node *tail=NULL;
 
 
 
 
 
 
-insertathead(head,20);
-insertathead(head,30);
-insertathead(head,40);
-insertathead(head,50);
+insertathead(head,tail,20);
+insertathead(head,tail,30);
+
 
 
 
 
  
-// insertattail(tail,200);
-// insertattail(tail,300);
-// insertattail(tail,400);
-// insertattail(tail,500);
+
+insertattail(head,tail,400);
+insertattail(head,tail,500);
 
 print(head);
 }
