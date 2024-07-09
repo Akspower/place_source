@@ -17,7 +17,7 @@ void shiftnegative(int arr[],int n){
 
 int main() {
     
-   int arr[]={-1,2,5,-6,9};
+   int arr[]={-1,2,-9,0,9};
     int n=5;
     shiftnegative(arr,n);
     

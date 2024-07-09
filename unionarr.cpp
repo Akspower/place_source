@@ -36,7 +36,7 @@ int main()
 
 
 	vector<int> uni = Unionarray(arr1, arr2, n, m);
-	for (int i : uni) {
+	for (auto i : uni) {
 		cout << i << " ";
 	}
 

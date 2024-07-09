@@ -24,6 +24,20 @@ int uniqueElement=findunique(arr,n);
 cout<<"unique element is "<<uniqueElement<<endl;
 
 
+//intersection logic
+
+
+
+// vector<int> ans;
+// for(int i=0;i<arr.size();i++){
+//     int element=arr[i];
+//     for(int j=0;brr.size();j++){
+//         if(element==brr[j]){
+//             ans.push_back(element);
+//         }
+//     }
+// }
+
 
 
 }
