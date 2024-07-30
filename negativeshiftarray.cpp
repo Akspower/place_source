@@ -19,7 +19,7 @@ int main() {
     
    int arr[]={-1,2,-9,0,9};
     int n=5;
-    shiftnegative(arr,n);
+    shiftnegative(arr,n);  //function
     
     return 0;
 }
