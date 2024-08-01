@@ -9,7 +9,7 @@ int main() {
     cin >> num;
 
     // Loop to reverse the digits of the number
-    while (num != 0) {
+    while (num != 0) { //check
         remainder = num % 10;           // Get the last digit
         reversedNum = reversedNum * 10 + remainder; // Append it to the reversed number
         num /= 10;                      // Remove the last digit
