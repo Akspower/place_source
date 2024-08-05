@@ -3,7 +3,10 @@
 using namespace std;
 string reverse(string s,int n){
     for(int i=0;i<n/2;i++){
-       swap(s[i],s[n-i-1]);
+    //    swap(s[i],s[n-i-1]);
+    char st=s[i];
+    s[i]=s[n-i-1];
+    s[n-i-1]=st;
         }
         
    return s;

@@ -4,10 +4,10 @@
 using namespace std;
 void reversearray(int Arr[],int len){
     for(int i=0;i<len/2;i++){
-        swap(Arr[i],Arr[len-i-1]);
-    //    int temp=Arr[i];
-    // Arr[i]=Arr[len-i-1];
-    // Arr[len-i-1]=temp;
+       // swap(Arr[i],Arr[len-i-1]);
+       int temp=Arr[i];
+    Arr[i]=Arr[len-i-1];
+    Arr[len-i-1]=temp;
     }
 
     

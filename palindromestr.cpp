@@ -23,7 +23,7 @@ cin>>s;
 
 
 int n=s.size();
-
+cout<<n<<endl;
 cout<<palindrome(s,n);
     return 0;
 }
