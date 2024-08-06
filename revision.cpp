@@ -1,25 +1,32 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-bool valid(string s1){
-    stack <char> st;
-    for(int i=0;i<s1.length();i++){
-        if(st.empty()){
-            st.push(s1[i]);
-        }
-      else if ((st.top()=='('&& s1[i]==')') || 
-               (st.top()=='{'&& s1[i]=='}') ||
-               (st.top()=='['&& s1[i]==']')) {
-                st.pop();
-               }
-      else {
-        st.push(s1[i]);
-      }
-    }
-    return st.size()==0;
+
+int buy(int * arr,int n){
+int buy=arr[0];
+int maxi=0;
+for(int i=0;i<n;i++){
+  if(buy>arr[i]){
+    buy=arr[i];
+  }
+    maxi=max(arr[i]-buy,maxi);
+  
+
+}
+  return maxi;
+ 
 }
 
+
+
+
+
+
+
 int main(){
-    string s1="()";
-    cout<<valid(s1);
+ 
+int arr[]={7,1,3,5,6,4};
+int n=sizeof(arr)/sizeof(arr[0]);
+int res=buy(arr,n);
+cout<<res;
 }

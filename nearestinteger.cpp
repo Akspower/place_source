@@ -3,7 +3,7 @@
 using namespace std;
 int nearestinteger(int num , int d){
 int r=num%d;
-if(r<(d+1)/2){
+if(r<(d+1)/2){  //smaller
     return num-r;
 }
 return num+(d-r);
