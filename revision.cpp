@@ -9,19 +9,19 @@ using namespace std;
 
 
 int checkprime(int arr[],int n){
-int count =0;
-int maxi=0;
+int first,second;
+first=second=INT_MAX;
 for(int i=0;i<n;i++){
-  if(arr[i]==0){
-    count++;
-    maxi=max(maxi,count);
-  }
-  else{
-    count=0;
-  }
- 
+if(arr[i]<first){
+  second=first;
+  first=arr[i];
 }
-return maxi;
+else if(arr[i]<second && arr[i]!=first){
+  second=arr[i];
+}
+}
+return second;
+
 }
 
 
@@ -30,8 +30,9 @@ return maxi;
 
 int main(){
  
-int arr[]={1,1,1,0,0,0,0,0,1,1,1,1,1};
+int arr[]={1,1,5,4,7};
 int n=sizeof(arr)/sizeof(arr[0]);
+
 int res=checkprime(arr,n);
 cout<<res;
 }
