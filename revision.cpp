@@ -41,6 +41,16 @@ int main(){
 int a=14;
 bitset<8> binary(a);
 cout<<binary;
+
+cout<<"\n";
+vector <int> v;
+while(a>0){
+  v.push_back(a%8);
+  a/=8;
+}
+for(int i=v.size()-1;i>=0;i--){
+cout<<v[i];
+}
 }
 
 
