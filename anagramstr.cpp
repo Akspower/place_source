@@ -39,6 +39,10 @@ cout<<isanagram(s1,s2);
 
 
 
+ int a = 5, b = 10;
+
+    cout << "max :" << (((a + b) + abs(a - b)) / 2) << endl;
+    cout << "min :" << (((a + b) - abs(a - b)) / 2) << endl;
 
 
 
