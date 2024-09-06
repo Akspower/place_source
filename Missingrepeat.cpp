@@ -20,7 +20,7 @@ vector<int> missrepeat(vector<int>& arr) {
             missing = i;
         }
         if (count[i] == 2) {
-            repeat = i; if any element repeat
+            repeat = i; //if any element repeat
         }
     }
 
