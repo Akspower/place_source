@@ -15,7 +15,7 @@ int main() {
         charCount[ch]++;
     }
 
-    // Output the number of duplicate characters and their counts
+   
     cout << "Characters with their counts:" << endl;
     for (auto pair : charCount) {
         cout << "' " << pair.first << " ' : " << pair.second << endl;
