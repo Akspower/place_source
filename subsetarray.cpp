@@ -22,6 +22,7 @@ if(total_element==s.size()){
     }
 else{
     cout<<"not a subset";
+    //no subset
 }
 
 

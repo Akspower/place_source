@@ -13,7 +13,7 @@ void shiftNegative(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {-1, 2, -9, 0, 9};
+    int arr[] = {-1, 2, -9, 3, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     shiftNegative(arr, n);
