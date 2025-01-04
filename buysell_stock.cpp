@@ -6,7 +6,7 @@ int profit(int * arr,int n){
 int buy=arr[0];
 int maxi=0;
 for(int i=1;i<n;i++){
-    if(buy>arr[i]){
+    if(buy>arr[i]){  //*(arr+i)
         buy=arr[i];
     }
     // else if(arr[i]-buy>maxi){
