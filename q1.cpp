@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//int  i;
+static int  count;
 
 void print(int no_row){
     int num=1;
@@ -18,7 +18,9 @@ void print(int no_row){
         }
          break;
         cout<<endl;
+        
     }
+    count++;
 }
 
 int main(){
@@ -53,10 +55,11 @@ int main(){
       //if((input != 'Y') || (input!='y'))
       if(input != 'Y')
       {
-        cout<<"In if condition"<<endl;
+        cout<<"In if condition"<<endl;//
         break;
       }
    }
+   cout<<count<<endl;
    //while(input == 'Y' || input=='y');
 
 
