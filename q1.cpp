@@ -11,16 +11,16 @@ void print(int no_row){
             cout<<" ";
             }
             else{
-                cout<<num;
+                 cout<<num;
                 num++;
             }
-           
+           cout<<endl;
         }
-         break;
-        cout<<endl;
+         
+        count++;
         
     }
-    count++;
+    
 }
 
 int main(){
@@ -42,8 +42,9 @@ int main(){
 
    // cout<<i;
 
-   int row = 0x00;
-   char input =0x00;
+   int row = 0;
+   char input =0;
+
   // do
   while(1)
    {
@@ -55,7 +56,7 @@ int main(){
       //if((input != 'Y') || (input!='y'))
       if(input != 'Y')
       {
-        cout<<"In if condition"<<endl;//
+        // cout<<"In if condition"<<endl;
         break;
       }
    }

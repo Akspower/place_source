@@ -40,6 +40,6 @@ if(count==missingnumber(arr,n)){
 }
 cout<<count;
 
-main();
+main(); //make it stack overflow due to recursive call
 
 }
