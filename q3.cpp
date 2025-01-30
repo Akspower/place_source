@@ -19,8 +19,10 @@ int s=i;
 
 
 
+
 int main()
 {
+    
 s ss;
 // ss.id=5;
 ss.set(7);
