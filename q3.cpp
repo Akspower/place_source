@@ -18,8 +18,6 @@ int s=i;
 };
 
 
-
-
 int main()
 {
     
