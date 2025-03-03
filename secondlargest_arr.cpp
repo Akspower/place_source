@@ -16,13 +16,13 @@ int secondlargest(int arr[],int n){
             sl=arr[i];
         }
     }
-    cout<<sl;
+    cout<<sl<<" " <<l;
 }
 
 
 int main (){
 
-int arr[]={2,4,6,45,31,1,75};
+int arr[]={2,2,6,45,45,75,1,75};
 int n=sizeof(arr)/sizeof(arr[0]);
 
 secondlargest(arr,n);
